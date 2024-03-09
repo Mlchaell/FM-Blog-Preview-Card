@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 50%);
+    --black: hsl(0, 0%, 7%);
+
+    --ff-main: "Figtree", sans-serif;
+    --fw-bold: 700;
+    ;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: var(--ff-main);
+    font-size: 62.5%;
+    /* 1rem = 10px */
+    height: 100%;
+}
+
+body {
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+}
+
+/*************************/
+/* General Styling */
+/*************************/
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--yellow);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5rem;
+
+    background-color: var(--white);
+    padding: 2rem;
+    border: 1px solid var(--black);
+    border-radius: 2rem;
+    box-shadow: 17px 18px 0px 2px var(--black);
+    margin: 0 auto;
+
+    max-width: 30rem;
+}
+
+.card__img {
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.card__tag {
+    font-size: 1.2rem;
+    font-weight: var(--fw-bold);
+    color: var(--black);
+    background-color: var(--yellow);
+    border-radius: .6rem;
+    padding: .5rem 2rem;
+}
+
+.card__date {
+    font-size: 1.2rem;
+}
+
+.card__title {
+    font-size: 2rem;
+}
+
+.card__title:hover {
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+.card__body {
+    font-size: 1.2rem;
+    color: var(--grey);
+}
+
+.card__pfp {
+    max-width: 3rem;
+}
+
+.card__name {
+    font-size: 1.2rem;
+    font-weight: var(--fw-bold);
+}
+
+.card__name:hover {
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+/*************************/
+/* General Styling */
+/*************************/
+
+.flex-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
